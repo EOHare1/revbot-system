@@ -1,0 +1,13 @@
+[build]
+builder = "NIXPACKS"
+buildCommand = "cd services/qr-generator && npm run build"
+
+[deploy]
+startCommand = "cd services/qr-generator && node dist/server.js"
+healthcheckPath = "/health"
+
+[[services]]
+name = "revbot-qr"
+
+[services.variables]
+PORT = "4001"

@@ -1,0 +1,21 @@
+{
+  "mcpServers": {
+    "revbot-memory": {
+      "command": "node",
+      "args": ["C:\\Users\\eoino\\revbot-system\\mcp-servers\\memory-server\\dist\\index.js"],
+      "env": {
+        "NODE_ENV": "production"
+      }
+    },
+    "revbot-stripe": {
+      "command": "node",
+      "args": ["C:\\Users\\eoino\\revbot-system\\mcp-servers\\stripe-server\\dist\\index.js"],
+      "env": {
+        "NODE_ENV": "production",
+        "STRIPE_SECRET_KEY": "sk_test_...",
+        "STRIPE_PUBLISHABLE_KEY": "pk_test_...",
+        "STRIPE_WEBHOOK_SECRET": "whsec_..."
+      }
+    }
+  }
+}

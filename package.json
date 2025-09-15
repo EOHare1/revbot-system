@@ -1,0 +1,19 @@
+{
+  "name": "revbot-system",
+  "version": "1.0.0",
+  "description": "RevBot is an enterprise-scale autonomous AI system that generates revenue 24/7 through:\r - **Autonomous service discovery and deployment**\r - **Real-time performance monitoring and optimization**\r - **Intelligent scaling and risk management**\r - **Persistent memory across Claude sessions**",
+  "main": "test-revbot-system.js",
+  "type": "module",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}

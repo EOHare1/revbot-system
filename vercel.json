@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "services/qr-generator/dist/server.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "services/qr-generator/dist/webhook.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/webhook",
+      "dest": "services/qr-generator/dist/webhook.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "services/qr-generator/dist/server.js"
+    }
+  ],
+  "env": {
+    "STRIPE_SECRET_KEY": "@stripe_secret_key",
+    "STRIPE_WEBHOOK_SECRET": "@stripe_webhook_secret"
+  }
+}

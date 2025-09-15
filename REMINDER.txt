@@ -1,0 +1,9 @@
+🤖 REVBOT SESSION REMINDER
+
+When you start a new Claude session, just say:
+
+"Go to C:\Users\eoino\revbot-system and follow the NEW-SESSION-COMMANDS.md file"
+
+That's it! Claude will guide you through testing RevBot's immortal memory.
+
+Your QR Generator is earning money at: http://localhost:4001
